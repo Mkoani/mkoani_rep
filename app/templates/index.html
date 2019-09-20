@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block app_content %}
+    <div class="container pt-5 d-flex align-content-center">
+
+            <form class="form-inline" action="" method="post">
+            <div class="row d-flex justify-content-between">
+                {{ form.hidden_tag() }}
+                <div class="col-md-4">
+                    <div class="form-group">
+                    {{ form.from_destination.label }}
+                    {{ form.from_destination(class_="form-control") }}
+                    {% for error in form.from_destination.errors %}
+                        <span style="color:red;">[{{ error }}]</span>
+                    {% endfor %}
+                </div>
+                </div>
+                <div class="form-group col-md-4">
+                    {{ form.to_destination.label }}
+                    {{ form.to_destination(class_="form-control") }}
+                    {% for error in form.to_destination.errors %}
+                        <span style="color:red;">[{{ error }}]</span>
+                    {% endfor %}
+                </div>
+                <div class="form-group col-md-4">
+                    {{ form.date_departure.label }}
+                    {{ form.date_departure(class_="form-control") }}
+                    {% for error in form.date_departure.errors %}
+                        <span style="color:red;">[{{ error }}]</span>
+                    {% endfor %}
+                </div>
+            </div>
+                <div class="row pt-md-3 pt-lg-3">
+                    <div class="form-group col-md-4 col-md-offset-4 ">
+                    {{ form.grade.label }}
+                    {{ form.grade(class_="form-control") }}
+                    {% for error in form.grade.errors %}
+                        <span style="color:red;">[{{ error }}]</span>
+                    {% endfor %}
+                </div>
+                </div>
+                <div class="row pt-md-3">
+                    <div class="col-md-12 align-center d-flex justify-content-center align-content-center float-none">
+                    {{ form.submit(class_="btn btn-default") }}
+                </div>
+                </div>
+
+
+            </form>
+
+        <div class="row">
+            <div class="col">
+                {% if buses %}
+                    {% for bus in buses %}
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>{{ bus.bus.busName }} {{ bus.bus.id }}</td>
+                                <br>
+                                {% if bus.bus.seats.all() %}
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar"
+                                                 aria-valuenow="{{ bus.bus.available_seats(bus.bus.grade) }}"
+                                                 aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:{{ bus.bus.available_seats() }}%;">
+                                                {{ bus.bus.available_seats() }}%
+                                            </div>
+                                        </div>
+                                    </td>
+                                {% endif %}
+                                <td> departing date:{{ bus.departing_date }} departing time:{{ bus.departing_time }}<br>
+                                    arriving date:{{ bus.arrival_date }} arriving time:{{ bus.arriving_time }}<br>
+                                </td>
+                                <td>fare:{{ bus.show_price }}</td>
+                                <td><a href="{{ url_for('bus',schedule=bus) }}">Select bus</a></td>
+                                </td>
+                        </table>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

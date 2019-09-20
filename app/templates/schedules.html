@@ -1,0 +1,45 @@
+{%extends 'owner_base.html'%}
+
+
+{%block details%}
+	<h3 class="menu-title">Schedules</h3><!-- /.menu-title -->
+
+     <li>
+        <a href="{{url_for('add_schedules')}}" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>add</a>
+    </li>
+    <li>
+        <a href="#"> <i class="menu-icon ti-email"></i>update</a>
+    </li>
+{%endblock%}
+
+{%block content%}
+	{%block schedules_content%}
+	{%endblock%}
+	{%for schedule in schedules%}
+		<table class="table table-bordered">
+			<tr>
+				<th>
+					bus id:{{schedule.Bus_id}}
+				</th>
+				<th>
+					route id:{{schedule.Routes_id}}
+				</th>
+				<th>
+					departure date:{{schedule.departing_date}}
+				</th>
+				<th>
+					departure time:{{schedule.departing_time}}
+				</th>
+				<th>
+					arriving date:{{schedule.arrival_date}}
+				</th>
+				<th>
+					arriving time:{{schedule.arriving_time}}
+				</th>
+				<th>
+					company:{{current_user.id}}
+				</th>
+			</tr>
+		</table>
+	{%endfor%}
+{%endblock%}

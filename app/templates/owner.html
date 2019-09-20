@@ -1,0 +1,42 @@
+{%extends 'owner_base.html'%}
+
+{%block content%}
+
+{%if schedules%}
+{%for bus in schedules%}
+<form>
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                <img src="{{current_user.display_image()}}" style="width: 128px;height: 128px;">
+            </th>
+             <th>
+                route id:<br>{{bus.route.id}}
+             </th>
+            <th>
+               bus id:<br>{{bus.bus.id}}
+            </th>
+            <th>
+            	bus name:<br>{{bus.bus.busName}}
+            </th>
+            <th>departing date:<br>{{bus.departing_date}}</th>
+            <th>arrival date:<br>{{bus.arrival_date}}</th>
+            <th>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{bus.bus.available_seats()}}"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: {{bus.bus.available_seats()}}%;"> 
+                                    {{bus.bus.available_seats()}}%
+                    </div>
+                                    
+                </div>
+           	</th>
+                            
+        </tr>
+                        
+    </table>
+</form>
+{%endfor%}
+{%endif%}
+
+{%endblock%}
+

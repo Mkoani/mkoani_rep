@@ -1,0 +1,305 @@
+[
+ {
+   "SNo": "1",
+   "Region": "Arusha",
+   "Capital": "Arusha",
+   "Districts": 6,
+   "Area (km2)": "34,516",
+   "Population": "16,94,310",
+   "Postcode": "23xxx",
+   "Zone": "Northern"
+ },
+ {
+   "SNo": "2",
+   "Region": "Dar es Salaam",
+   "Capital": "Dar es Salaam",
+   "Districts": 3,
+   "Area (km2)": "1,393",
+   "Population": "43,64,541",
+   "Postcode": "11xxx",
+   "Zone": "Coastal"
+ },
+ {
+   "SNo": "3",
+   "Region": "Dodoma",
+   "Capital": "Dodoma",
+   "Districts": 7,
+   "Area (km2)": "41,311",
+   "Population": "20,83,588",
+   "Postcode": "41xxx",
+   "Zone": "Central"
+ },
+ {
+   "SNo": "4",
+   "Region": "Geita",
+   "Capital": "Geita",
+   "Districts": 5,
+   "Area (km2)": "20,054",
+   "Population": "17,39,530",
+   "Postcode": "30xxx",
+   "Zone": "Lake"
+ },
+ {
+   "SNo": "5",
+   "Region": "Iringa",
+   "Capital": "Iringa",
+   "Districts": 3,
+   "Area (km2)": "35,503",
+   "Population": "9,41,238",
+   "Postcode": "51xxx",
+   "Zone": "Southern Highlands"
+ },
+ {
+   "SNo": "6",
+   "Region": "Kagera",
+   "Capital": "Bukoba",
+   "Districts": 7,
+   "Area (km2)": "39,627",
+   "Population": "24,58,023",
+   "Postcode": "35xxx",
+   "Zone": "Lake"
+ },
+ {
+   "SNo": "7",
+   "Region": "Katavi",
+   "Capital": "Mpanda",
+   "Districts": 2,
+   "Area (km2)": "45,843",
+   "Population": "5,64,604",
+   "Postcode": "50xxx",
+   "Zone": "Southern Highlands"
+ },
+ {
+   "SNo": "8",
+   "Region": "Kigoma",
+   "Capital": "Kigoma",
+   "Districts": 6,
+   "Area (km2)": "45,066",
+   "Population": "21,27,930",
+   "Postcode": "47xxx",
+   "Zone": "Central"
+ },
+ {
+   "SNo": "9",
+   "Region": "Kilimanjaro",
+   "Capital": "Moshi",
+   "Districts": 6,
+   "Area (km2)": "13,209",
+   "Population": "16,40,087",
+   "Postcode": "25xxx",
+   "Zone": "Northern"
+ },
+ {
+   "SNo": "10",
+   "Region": "Lindi",
+   "Capital": "Lindi",
+   "Districts": 5,
+   "Area (km2)": "67,000",
+   "Population": "8,64,652",
+   "Postcode": "65xxx",
+   "Zone": "Coastal"
+ },
+ {
+   "SNo": "11",
+   "Region": "Manyara",
+   "Capital": "Babati",
+   "Districts": 5,
+   "Area (km2)": "47,913",
+   "Population": "14,25,131",
+   "Postcode": "27xxx",
+   "Zone": "Northern"
+ },
+ {
+   "SNo": "12",
+   "Region": "Mara",
+   "Capital": "Musoma",
+   "Districts": 6,
+   "Area (km2)": "31,150",
+   "Population": "17,43,830",
+   "Postcode": "31xxx",
+   "Zone": "Lake"
+ },
+ {
+   "SNo": "13",
+   "Region": "Mbeya",
+   "Capital": "Mbeya",
+   "Districts": 8,
+   "Area (km2)": "62,420",
+   "Population": "27,07,410",
+   "Postcode": "53xxx",
+   "Zone": "Southern Highlands"
+ },
+ {
+   "SNo": "14",
+   "Region": "Mjini Magharibi",
+   "Capital": "Zanzibar City",
+   "Districts": 2,
+   "Area (km2)": "230",
+   "Population": "5,93,678",
+   "Postcode": "71xxx",
+   "Zone": "Zanzibar"
+ },
+ {
+   "SNo": "15",
+   "Region": "Morogoro",
+   "Capital": "Morogoro",
+   "Districts": 6,
+   "Area (km2)": "70,799",
+   "Population": "22,18,492",
+   "Postcode": "67xxx",
+   "Zone": "Coastal"
+ },
+ {
+   "SNo": "16",
+   "Region": "Mtwara",
+   "Capital": "Mtwara",
+   "Districts": 5,
+   "Area (km2)": "16,707",
+   "Population": "12,70,854",
+   "Postcode": "63xxx",
+   "Zone": "Coastal"
+ },
+ {
+   "SNo": "17",
+   "Region": "Mwanza",
+   "Capital": "Mwanza",
+   "Districts": 7,
+   "Area (km2)": "9,467",
+   "Population": "27,72,509",
+   "Postcode": "33xxx",
+   "Zone": "Lake"
+ },
+ {
+   "SNo": "18",
+   "Region": "Njombe",
+   "Capital": "Njombe",
+   "Districts": 4,
+   "Area (km2)": "21,347",
+   "Population": "7,02,097",
+   "Postcode": "59xxx",
+   "Zone": "Southern Highlands"
+ },
+ {
+   "SNo": "19",
+   "Region": "Pemba North",
+   "Capital": "Wete",
+   "Districts": 2,
+   "Area (km2)": "574",
+   "Population": "2,11,732",
+   "Postcode": "75xxx",
+   "Zone": "Zanzibar"
+ },
+ {
+   "SNo": "20",
+   "Region": "Pemba South",
+   "Capital": "Chake Chake",
+   "Districts": 2,
+   "Area (km2)": "332",
+   "Population": "1,95,116",
+   "Postcode": "74xxx",
+   "Zone": "Zanzibar"
+ },
+ {
+   "SNo": "21",
+   "Region": "Pwani",
+   "Capital": "Kibaha",
+   "Districts": 6,
+   "Area (km2)": "32,407",
+   "Population": "10,98,668",
+   "Postcode": "61xxx",
+   "Zone": "Coastal"
+ },
+ {
+   "SNo": "22",
+   "Region": "Rukwa",
+   "Capital": "Sumbawanga",
+   "Districts": 3,
+   "Area (km2)": "22,792",
+   "Population": "10,04,539",
+   "Postcode": "55xxx",
+   "Zone": "Southern Highlands"
+ },
+ {
+   "SNo": "23",
+   "Region": "Ruvuma",
+   "Capital": "Songea",
+   "Districts": 5,
+   "Area (km2)": "66,477",
+   "Population": "13,76,891",
+   "Postcode": "57xxx",
+   "Zone": "Southern Highlands"
+ },
+ {
+   "SNo": "24",
+   "Region": "Shinyanga",
+   "Capital": "Shinyanga",
+   "Districts": 3,
+   "Area (km2)": "18,901",
+   "Population": "15,34,808",
+   "Postcode": "37xxx",
+   "Zone": "Lake"
+ },
+ {
+   "SNo": "25",
+   "Region": "Simiyu",
+   "Capital": "Bariadi",
+   "Districts": 5,
+   "Area (km2)": "25,212",
+   "Population": "15,84,157",
+   "Postcode": "39xxx",
+   "Zone": "Lake"
+ },
+ {
+   "SNo": "26",
+   "Region": "Singida",
+   "Capital": "Singida",
+   "Districts": 5,
+   "Area (km2)": "49,437",
+   "Population": "13,70,637",
+   "Postcode": "43xxx",
+   "Zone": "Central"
+ },
+ {
+   "SNo": "27",
+   "Region": "Tabora",
+   "Capital": "Tabora",
+   "Districts": 7,
+   "Area (km2)": "76,151",
+   "Population": "22,91,623",
+   "Postcode": "45xxx",
+   "Zone": "Central"
+ },
+ {
+   "SNo": "28",
+   "Region": "Tanga",
+   "Capital": "Tanga",
+   "Districts": 8,
+   "Area (km2)": "27,348",
+   "Population": "20,45,205",
+   "Postcode": "21xxx",
+   "Zone": "Northern"
+ },
+ {
+   "SNo": "29",
+   "Region": "Unguja North",
+   "Capital": "Mkokotoni",
+   "Districts": 2,
+   "Area (km2)": "470",
+   "Population": "1,87,455",
+   "Postcode": "73xxx",
+   "Zone": "Zanzibar"
+ },
+ {
+   "SNo": "30",
+   "Region": "Unguja South",
+   "Capital": "Koani",
+   "Districts": 2,
+   "Area (km2)": "854",
+   "Population": "1,15,588",
+   "Postcode": "72xxx",
+   "Zone": "Zanzibar"
+ }
+
+
+
+]

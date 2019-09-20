@@ -1,0 +1,29 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    MkoaniApp
+{% endblock %}
+{% block navbar %}
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <ul>
+                <a href="">Home</a>
+                <a href="">Contacts</a>
+            </ul>
+        </div>
+
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        {% block app_content %}
+        {% endblock %}
+    </div>
+
+    {% with messages=get_flashed_messages() %}
+        {% for message in messages %}
+            <span style="color: red;">{{ messages }}</span>
+        {% endfor %}
+    {% endwith %}
+{% endblock %}

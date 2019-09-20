@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{%block app_content%}
+
+<form class="" action="" method="post">
+  {{form.hidden_tag()}}
+  <p>{{form.seat.label}}</p><br>
+  <p>{{form.seat()}}</p><br>
+  <p>{%for error in form.seat.errors%}
+    <span style="color:red;">[{{error}}]</span>
+    {%endfor%}
+  </p>
+  <p>{{form.choose_seat()}}</p>
+</form>
+
+{%if seats%}
+{%for seat in seats%}
+<table>
+  <tr>
+    <td>Seat number:{{seat.id}} booked</td>
+  </tr>
+</table>
+{%endfor%}
+{%endif%}
+
+{%if held%}
+{%for seat in held%}
+<table>
+  <tr>
+    <td>Seat number:{{seat.id}} hold</td>
+  </tr>
+</table>
+{%endfor%}
+{%endif%}
+{%endblock%}

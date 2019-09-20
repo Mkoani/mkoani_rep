@@ -1,0 +1,19 @@
+{%extends 'owner_base.html' %}
+
+
+
+{%block content%}
+ <div class="form-inline">
+    <form class="search-form" method="post" action="{{url_for('customers')}}">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search ..." name="search">
+        <input  type="submit" value="search">
+    </form>
+</div>
+
+	{%for result in result%}
+		<p>{{result.id}}</p>
+		<p>{{result.name}}</p>
+		<p>{{result.phoneNo}}</p>
+		{%if email%}<p>{{result.email}}</p>{%endif%}
+	{%endfor%}
+{%endblock%}

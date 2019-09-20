@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+
+{%block app_content%}
+<form class="" action="" method="post">
+{{form.hidden_tag()}}
+<p> Bus:{{name}} {{form.from_destination.label}}:{{form.from_destination()}} {{form.to_destination.label}}:{{form.to_destination()}}</p><br>
+<p>{{form.leaving_date.label}}:{{form.leaving_date()}}<br>
+	{{form.arrival_date.label}}:{{form.arrival_date()}}
+</p>
+<p>{{form.leaving_time.label}}:{{form.leaving_time()}}<br>
+	{{form.arriving_time.label}}:{{form.arriving_time()}}
+</p>
+
+<p>{{form.name.label}}:{{form.name(size=32)}} Seat(s) chosen:{%for seat in seat%} {{seat}}   {%endfor%}<br>
+  {%for error in form.name.errors%}
+  <span style="color:red;">[{{error}}]</span>
+
+</p>
+{%endfor%}
+<p>{{form.phoneno.label}}<br>{{form.phoneno(size=10)}}
+  {%for error in form.phoneno.errors%}
+  <span style="color:red;">[{{error}}]</span>
+  {%endfor%}
+</p>
+<p>{{form.email.label}}<br>{{form.email(size=32)}}
+  {%for error in form.email.errors%}
+  <span style="color:red;">[{{error}}]</span>
+  {%endfor%}
+</p>
+<p> Amount:{{amount}}</p>
+<p>  {{form.pay()}}</p>
+</form>
+<form class="" action="{{url_for('cancel')}}" method='post'>
+<p>{{cancel.cancel()}}</p>
+</form>
+{%endblock%}

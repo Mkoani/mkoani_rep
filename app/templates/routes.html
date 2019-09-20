@@ -1,0 +1,45 @@
+{%extends 'owner_base.html'%}
+
+{%block content%}
+	<form action="" method="post">
+		{{form.hidden_tag()}}
+    <table class="table table-bordered">
+        <tr>
+            <th>
+            	<div>
+                {{form.from_destination.label}}
+                {{form.from_destination()}}
+                {%for error in form.from_destination.errors%}
+                	<span>{{error}}</span>
+                {%endfor%}
+                </div>
+            </th>
+             <th>
+                <div>
+                {{form.to_destination.label}}
+                {{form.to_destination()}}
+                {%for error in form.to_destination.errors%}
+                	<span>{{error}}</span>
+                {%endfor%}
+                </div>
+             </th>
+            <th>
+               <div>
+               	{{form.route_id.label}}
+                {{form.route_id()}}
+                {%for error in form.route_id.errors%}
+                	<span>{{error}}</span>
+                {%endfor%}
+               </div>
+            </th>
+            
+            <th>
+               {{form.add()}}
+           	</th>
+           	
+                           
+        </tr>
+                        
+    </table>
+</form>
+{%endblock%}
